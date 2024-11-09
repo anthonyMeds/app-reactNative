@@ -1,7 +1,7 @@
 
-import { View, Pressable, Image, Text } from 'react-native';
+import { Image, Pressable, View } from 'react-native';
 
-import PagerView from 'react-native-pager-view'
+import PagerView from 'react-native-pager-view';
 
 export default function banner() {
     return (
