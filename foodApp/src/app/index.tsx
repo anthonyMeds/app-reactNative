@@ -6,6 +6,7 @@ import Banner from "../components/banner";
 import { Search } from "../components/search";
 import { Sections } from "../components/sections";
 import { Tendencias } from "../components/tendencias";
+import { Restaurants } from "../components/restaurants";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -34,6 +35,15 @@ export default function Index() {
       />
 
       <Tendencias/>
+
+      <Sections
+        name="Restaurantes preferidos"
+        label="veja mais"
+        size="text-2x1"
+        action={() => console.log("clicou no veja mais")}
+      />
+
+      <Restaurants/>
 
     </ScrollView>
   );
