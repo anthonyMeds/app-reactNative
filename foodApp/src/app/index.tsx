@@ -5,6 +5,7 @@ import Constants from 'expo-constants';
 import Banner from "../components/banner";
 import { Search } from "../components/search";
 import { Sections } from "../components/sections";
+import { Tendencias } from "../components/tendencias";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -32,6 +33,7 @@ export default function Index() {
         action={() => console.log("clicou no veja mais")}
       />
 
+      <Tendencias/>
 
     </ScrollView>
   );
