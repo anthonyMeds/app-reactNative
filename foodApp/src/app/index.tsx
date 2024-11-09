@@ -4,6 +4,7 @@ import { Header } from "../components/header";
 import Constants from 'expo-constants';
 import Banner from "../components/banner";
 import { Search } from "../components/search";
+import { Sections } from "../components/sections";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -22,8 +23,14 @@ export default function Index() {
 
         <Search />
 
-
       </View>
+
+      <Sections
+        name="Comidas em alta"
+        label="veja mais"
+        size="text-2x1"
+        action={() => console.log("clicou no veja mais")}
+      />
 
 
     </ScrollView>
