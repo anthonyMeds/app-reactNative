@@ -37,13 +37,20 @@ export default function Index() {
       <Tendencias/>
 
       <Sections
-        name="Restaurantes preferidos"
+        name="Preferidos"
         label="veja mais"
         size="text-2x1"
         action={() => console.log("clicou no veja mais")}
       />
 
       <Restaurants/>
+
+      <Sections
+        name="Restaurantes"
+        label="veja mais"
+        size="text-2x1"
+        action={() => console.log("clicou no veja mais")}
+      />
 
     </ScrollView>
   );
