@@ -22,10 +22,8 @@ export function Tendencias() {
 
     useEffect(() => {
         async function getFoods() {
-            const response = await fetch("http://localhost:3000/foods")
-            console.log(response)
+            const response = await fetch("http://192.168.1.8:3000/foods")
             const data = await response.json()
-            console.log(data);
             setFoods(data);
         }
 

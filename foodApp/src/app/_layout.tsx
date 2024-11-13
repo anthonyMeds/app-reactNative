@@ -1,8 +1,11 @@
-import '../styles/global.css'
-
-
+import '../styles/global.css';
 import { Slot } from "expo-router";
+import { CartProvider } from '../CartContext';
 
 export default function RootLayout() {
-  return <Slot/>
+  return (
+    <CartProvider>
+      <Slot />
+    </CartProvider>
+  );
 }
