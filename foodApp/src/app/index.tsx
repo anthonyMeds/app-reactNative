@@ -1,4 +1,4 @@
-import { Button, ScrollView, View } from "react-native";
+import { ScrollView, View } from "react-native";
 import { Header } from "../components/header";
 
 import Constants from 'expo-constants';
@@ -9,8 +9,6 @@ import { Tendencias } from "../components/tendencias";
 import { Restaurants } from "../components/restaurants";
 import Restaurante from "../components/restaurantsList/restauranteVertical";
 import RestauranteVertical from "../components/restaurantsList/restauranteVertical";
-import { router } from "expo-router";
-import { MaterialIcons } from "@expo/vector-icons";
 
 const statusBarHeight = Constants.statusBarHeight;
 
