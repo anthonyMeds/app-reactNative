@@ -22,7 +22,7 @@ export function Tendencias() {
 
     useEffect(() => {
         async function getFoods() {
-            const response = await fetch("http://localhost:3000/foods")
+            const response = await fetch("http://192.168.0.4:3000/foods")
             console.log(response)
             const data = await response.json()
             console.log(data);
