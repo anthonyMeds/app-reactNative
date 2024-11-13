@@ -1,6 +1,7 @@
 import { View, FlatList } from 'react-native';
 import { useState, useEffect } from 'react';
 import { CardHorizontalFood } from './food';
+import {API_URL} from '../../../config'
 
 export interface FoodProps {
     id: string;
@@ -13,8 +14,6 @@ export interface FoodProps {
     restauranteId: number;
 }
 
-//adicione aqui o endereco ipv4 - cmd: ipconfig
-// rodar npx json-server db.json em um outro cmd 
 
 export function Tendencias() {
 
@@ -22,7 +21,7 @@ export function Tendencias() {
 
     useEffect(() => {
         async function getFoods() {
-            const response = await fetch("http://192.168.0.4:3000/foods")
+            const response = await fetch(`${API_URL}/foods`)
             console.log(response)
             const data = await response.json()
             console.log(data);
