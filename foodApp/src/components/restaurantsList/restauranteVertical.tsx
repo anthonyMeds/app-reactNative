@@ -15,10 +15,8 @@ export default function restaurantsList() {
 
     useEffect(() => {
         async function getRestaurants() {
-            const response = await fetch("http://localhost:3000/restaurants")
-            console.log(response)
+            const response = await fetch("http://192.168.1.8:3000/restaurants")
             const data = await response.json()
-            console.log(data);
             setRestaurants(data);
         }
 
