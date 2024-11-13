@@ -40,7 +40,8 @@
         "delivery": 5.99,
         "rating": 4.8,
         "image": "https://i.imgur.com/CEVUdju.png",
-        "restaurantId": "1"
+        "restaurantId": "1",
+        "quantity": 1
   
       },
       { 
@@ -51,7 +52,8 @@
         "delivery": 2.99,
         "rating": 4.9,
         "image": "https://i.imgur.com/uXRuDFD.png",
-        "restaurantId": "6"
+        "restaurantId": "6",
+        "quantity": 1
       },
       { 
         "id": "3", 
@@ -61,7 +63,8 @@
         "delivery": 5.99,
         "rating": 4.5,
         "image": "https://i.imgur.com/O5c3lyU.png",
-        "restaurantId": "5"
+        "restaurantId": "5",
+        "quantity": 1
       },
       { 
         "id": "4", 
@@ -71,7 +74,8 @@
         "delivery": 5.99,
         "rating": 4.4,
         "image": "https://i.imgur.com/0UjG3wk.png",
-        "restaurantId": "3"
+        "restaurantId": "3",
+        "quantity": 1
       },
       { 
         "id": "5", 
@@ -81,7 +85,30 @@
         "delivery": 2.99,
         "rating": 4.4,
         "image": "https://i.imgur.com/BaUUCkc.png",
-        "restaurantId": "3"
+        "restaurantId": "3",
+        "quantity": 1
+      },
+      { 
+        "id": "6", 
+        "name": "Açai 300ml", 
+        "price": 20,
+        "time": "20-30 min",
+        "delivery": 2.99,
+        "rating": 4.4,
+        "image": "https://i.imgur.com/BaUUCkc.png",
+        "restaurantId": "3",
+        "quantity": 1
+      },
+      { 
+        "id": "7", 
+        "name": "Açai 300ml", 
+        "price": 20,
+        "time": "20-30 min",
+        "delivery": 2.99,
+        "rating": 4.4,
+        "image": "https://i.imgur.com/BaUUCkc.png",
+        "restaurantId": "3",
+        "quantity": 1
       }
     ]
   }

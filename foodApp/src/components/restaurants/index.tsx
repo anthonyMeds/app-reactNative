@@ -19,7 +19,6 @@ export function Restaurants() {
             const response = await fetch(`${API_URL}/restaurants`)
             console.log(response)
             const data = await response.json()
-            console.log(data);
             setRestaurants(data);
         }
 

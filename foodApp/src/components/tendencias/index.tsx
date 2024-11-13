@@ -24,7 +24,6 @@ export function Tendencias() {
             const response = await fetch(`${API_URL}/foods`)
             console.log(response)
             const data = await response.json()
-            console.log(data);
             setFoods(data);
         }
 
