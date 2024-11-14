@@ -1,5 +1,6 @@
 import { View, Pressable, Text, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { router } from "expo-router";
 
 import { RestaurantsProps } from '..';
 
@@ -7,8 +8,8 @@ export function Horizontal({ restaurant }: { restaurant: RestaurantsProps }) {
     return (
         <Pressable
             className='flex flex-col items-center justify-center mb-6 '
-            onPress={() => console.log("clicou no restautante")}
-        >
+            onPress={() => router.push("/listaComidasVertical")}>
+
 
             <Image
                 source={{ uri: restaurant.image }}
