@@ -1,16 +1,14 @@
-import { Button, ScrollView, View } from "react-native";
+import { ScrollView, View } from "react-native";
 import { Header } from "../components/header";
 
 import Constants from 'expo-constants';
+import { router } from "expo-router";
 import Banner from "../components/banner";
+import { Restaurants } from "../components/restaurants";
 import { Search } from "../components/search";
 import { Sections } from "../components/sections";
 import { Tendencias } from "../components/tendencias";
-import { Restaurants } from "../components/restaurants";
-import Restaurante from "../components/restaurantsList/restauranteVertical";
-import RestauranteVertical from "../components/restaurantsList/restauranteVertical";
-import { router } from "expo-router";
-import { MaterialIcons } from "@expo/vector-icons";
+import RestauranteVertical from "./restauranteVertical";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -41,22 +39,15 @@ export default function Index() {
       <Tendencias />
 
       <Sections
-        name="Preferidos"
+        name="Restaurantes"
         label="veja mais"
         size="text-2x1"
-        action={() => console.log("clicou no veja mais")}
+        action={() => router.push("/restauranteVertical")}
       />
 
       <Restaurants />
 
-      <Sections
-        name="Restaurantes"
-        label="veja mais"
-        size="text-2x1"
-        action={() => console.log("clicou no veja mais")}
-      />
 
-      <RestauranteVertical />
 
     </ScrollView>
   );

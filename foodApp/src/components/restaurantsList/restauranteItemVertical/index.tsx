@@ -1,6 +1,6 @@
 import { View, Pressable, Text, Image } from 'react-native';
 
-import { RestaurantsProps } from '../restauranteVertical';
+import { RestaurantsProps } from '../../../app/restauranteVertical';
 import { Ionicons } from '@expo/vector-icons';
 
 export function RestauranteItem({ item }: { item: RestaurantsProps }) {

@@ -6,7 +6,7 @@ import { RestaurantsProps } from '..';
 export function Horizontal({ restaurant }: { restaurant: RestaurantsProps }) {
     return (
         <Pressable
-            className='flex flex-col items-center justify-center'
+            className='flex flex-col items-center justify-center mb-6 '
             onPress={() => console.log("clicou no restautante")}
         >
 
@@ -15,7 +15,7 @@ export function Horizontal({ restaurant }: { restaurant: RestaurantsProps }) {
                 className="w-44 h-36 rounded-1x1"
             />
 
-            <Text className='text-black text-center leading-2 font-semibold' numberOfLines={2}>
+            <Text className='text-black text-center leading-2 font-semibold ' numberOfLines={2}>
                 {restaurant.name}
             </Text>
 
