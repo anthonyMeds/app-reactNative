@@ -109,6 +109,18 @@
         "image": "https://i.imgur.com/BaUUCkc.png",
         "restaurantId": "3",
         "quantity": 1
+      },
+      { 
+        "id": "8", 
+        "name": "Galeto", 
+        "price": 56.90,
+        "time": "20-60 min",
+        "delivery": 9.99,
+        "rating": 4.8,
+        "image": "https://i.imgur.com/CEVUdju.png",
+        "restaurantId": "1",
+        "quantity": 1
+
       }
     ]
   }

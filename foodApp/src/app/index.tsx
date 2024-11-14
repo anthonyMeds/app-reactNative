@@ -33,7 +33,7 @@ export default function Index() {
         name="Comidas em alta"
         label="veja mais"
         size="text-2x1"
-        action={() => console.log("clicou no veja mais")}
+        action={() => router.push("/listaComidasVertical")}
       />
 
       <Tendencias />
