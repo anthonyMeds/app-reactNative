@@ -2,23 +2,27 @@ import { View, Pressable, Text, Image, TouchableOpacity, Alert } from 'react-nat
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { FoodProps } from '..';
 import { useCart } from '@/src/CartContext';
+import { useRouter } from 'expo-router';
 
 export function CardHorizontalFood({ food }: { food: FoodProps }) {
   const { addToCart } = useCart();
+  const router = useRouter();
 
   const handleAddToCart = () => {
-    // Converte FoodProps para Product, adicionando a propriedade 'quantity'
     const product = { ...food, quantity: 1 };
-    
-    // Chama a função de adicionar ao carrinho
     addToCart(product);
-    
-    // Exibe o alerta de sucesso
     Alert.alert("Produto adicionado no carrinho");
   };
 
+  const handleNavigateToDetails = () => {
+    router.push({
+      pathname: '/detalhesComida',
+      params: { food: JSON.stringify(food) },  // Passa o objeto `food` como string JSON
+    });
+  };
+
   return (
-    <Pressable className='flex flex-col rounded-x1'>
+    <Pressable className='flex flex-col rounded-x1' onPress={handleNavigateToDetails}>
       <Image
         source={{ uri: food.image }}
         className="w-44 h-36 rounded-x1"
@@ -30,7 +34,7 @@ export function CardHorizontalFood({ food }: { food: FoodProps }) {
           {food.rating}
         </Text>
       </View>
-      
+
       <Text className='text-green-700 font-medium text-lg'>
         R$ {food.price}
       </Text>
